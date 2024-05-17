@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape from the Labyrinth</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000000;
+            margin: 0;
+        }
+        .instructions {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            text-align: left;
+        }
+        .instructions h1 {
+            text-align: center;
+        }
+        .color-box {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .start { background-color: #0f0; }
+        .player { background-color: #00f; }
+        .key { background-color: #ff0; }
+        .wall { background-color: #000; }
+        .hidden { background-color: #808080; }
+        .end { background-color: #f00; }
+        .start-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .start-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="instructions">
+        <h1>Escape from the Labyrinth</h1>
+        <p><div class="color-box start"></div>スタート地点</p>
+        <p><div class="color-box player"></div>プレイヤー</p>
+        <p><div class="color-box key"></div>鍵</p>
+        <p><div class="color-box wall"></div>壁</p>
+        <p><div class="color-box hidden"></div>視界の外</p>
+        <p><div class="color-box end"></div>ゴール</p>
+        <h2>操作方法</h2>
+        <p>方向キーでプレイヤーのいるマスを移動する。</p>
+        <a href="index.html" class="start-button">START</a>
+    </div>
+</body>
+</html>

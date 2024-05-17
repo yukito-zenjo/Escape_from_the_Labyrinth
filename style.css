@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000000;
+}
+
+#maze {
+    display: grid;
+    grid-template-columns: repeat(24, 40px); /* Adjusted to 40px width */
+    grid-template-rows: repeat(14, 40px);    /* Adjusted to 40px height */
+    gap: 5px;  /* Adjusted gap for better spacing */
+}
+
+.cell {
+    width: 50px;  /* Adjusted width */
+    height: 50px; /* Adjusted height */
+    background-color: #fff;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+
+.wall {
+    background-color: #000;
+}
+
+#start {
+    background-color: #0f0;
+}
+
+#end {
+    background-color: #f00;
+}
+
+#key {
+    background-color: #ff0;
+}
+
+.player {
+    background-color: #00f;
+}
+
+.hidden {
+    background-color: #808080 !important; /* Gray color for hidden cells, !important to override other styles */
+}
